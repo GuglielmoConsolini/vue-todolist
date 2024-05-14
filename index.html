@@ -14,7 +14,8 @@
         <ul>
             <li v-for="mansione in coseDaFare">{{mansione}}<li>
         </ul>
-
+        <input type="text" v-model="nuovaMansione">
+        <button @click="aggiungiMansione">Aggiungi</button>
     </div>
     
 

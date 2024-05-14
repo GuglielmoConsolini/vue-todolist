@@ -12,9 +12,17 @@ createApp({
                 "Portare a spasso il cane",
                 "Sistemare i vestiti"
             ],
+            nuovaMansione: ''
         }
     },
     methods: { 
+        aggiungiMansione(){
+            if(this.nuovaMansione !== ''){
+                this.coseDaFare.push(this.nuovaMansione)
+                console.log(this.nuovaMansione)
+                this.nuovaMansione = ''
+            }
+        }
     },
     mounted() {
     }
