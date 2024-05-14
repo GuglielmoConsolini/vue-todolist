@@ -22,6 +22,10 @@ createApp({
                 console.log(this.nuovaMansione)
                 this.nuovaMansione = ''
             }
+        },
+        rimuoviMansione(mansioneDaRimuovere){
+            this.coseDaFare = this.coseDaFare.filter(mansione => mansione !== mansioneDaRimuovere);
+            console.log('Mansione rimossa:', mansioneDaRimuovere);  
         }
     },
     mounted() {
